@@ -1,7 +1,6 @@
-package com.joizhang.learnnetty.bio;
+package com.joizhang.learnnetty.jdk.bio;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.concurrent.ArrayBlockingQueue;

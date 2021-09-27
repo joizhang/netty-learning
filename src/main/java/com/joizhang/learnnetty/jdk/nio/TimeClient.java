@@ -1,8 +1,9 @@
-package com.joizhang.learnnetty.aio;
+package com.joizhang.learnnetty.jdk.nio;
 
 public class TimeClient {
 
     public static void main(String[] args) {
+
         int port = 8080;
         if (args != null && args.length > 0) {
             try {
@@ -10,9 +11,8 @@ public class TimeClient {
             } catch (NumberFormatException e) {
                 // 采用默认值
             }
-
         }
-        new Thread(new AsyncTimeClientHandler("127.0.0.1", port), "AIO-AsyncTimeClientHandler-001").start();
+        new Thread(new TimeClientHandle("127.0.0.1", port), "TimeClient-001").start();
     }
 
 }

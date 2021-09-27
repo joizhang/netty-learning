@@ -1,4 +1,4 @@
-package com.joizhang.learnnetty.aio;
+package com.joizhang.learnnetty.jdk.nio;
 
 import java.io.IOException;
 
@@ -13,8 +13,8 @@ public class TimeServer {
                 // 采用默认值
             }
         }
-        AsyncTimeServerHandler timeServer = new AsyncTimeServerHandler(port);
-        new Thread(timeServer, "AIO-AsyncTimeServerHandler-001").start();
+        MultiplexerTimeServer timeServer = new MultiplexerTimeServer(port);
+        new Thread(timeServer, "NIO-MultiplexerTimeServer-001").start();
     }
 
 }

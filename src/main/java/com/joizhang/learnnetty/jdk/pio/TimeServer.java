@@ -1,6 +1,6 @@
-package com.joizhang.learnnetty.pio;
+package com.joizhang.learnnetty.jdk.pio;
 
-import com.joizhang.learnnetty.bio.TimeServerHandler;
+import com.joizhang.learnnetty.jdk.bio.TimeServerHandler;
 
 import java.io.IOException;
 import java.net.ServerSocket;

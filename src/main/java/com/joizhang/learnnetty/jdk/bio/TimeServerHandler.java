@@ -1,4 +1,4 @@
-package com.joizhang.learnnetty.bio;
+package com.joizhang.learnnetty.jdk.bio;
 
 import java.io.BufferedReader;
 import java.io.IOException;
